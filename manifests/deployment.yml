@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: anildesaisunbirdechoservice 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: anildesaisunbirdechoservice
+  template:
+    metadata:
+      labels:
+        app: anildesaisunbirdechoservice 
+    spec:
+      containers:
+        - name: anildesaisunbirdechoservice 
+          image: tesfrt.azurecr.io/anildesaisunbirdechoservice
+          ports:
+          - containerPort: 9595
