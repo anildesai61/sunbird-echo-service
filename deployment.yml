@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: sunbridechoservice
-        image: "acrska.azurecr.io/anildesai61/sunbird-echo-service:#{Build.BuildId}#"
+        image: "tesfrt.azurecr.io/anildesai61/sunbird-echo-service:#{Build.BuildId}#"
         imagePullPolicy: Always
         ports:
         - containerPort: 80
